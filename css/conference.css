@@ -1,0 +1,527 @@
+@font-face {
+  font-display: swap; 
+  font-family: "Rubik";
+  font-weight: 400;
+  src:  url("../fonts/rubikregular.woff2") format("woff2"), 
+  url("../fonts/rubikregular.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: "Rubik";
+  font-weight: 500;
+  src:  url("../fonts/rubikmedium.woff2") format("woff2"), 
+  url("../fonts/rubikmedium.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: "Rubik";
+  font-weight: 700;
+  src:  url("../fonts/rubikbold.woff2") format("woff2"),
+  url("../fonts/rubikbold.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 500;
+}
+
+img {
+  display: block;
+}
+
+.list-unstyled {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.cite-header {
+  padding-bottom: 50px;
+}
+
+.cite-header-top {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #f6f6f6;
+}
+
+.header-top-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.cite-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.namanganliklar-logo-wrapper{
+  margin-right: 41px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+
+.namanganliklar-logo {
+  padding-top: 9px;
+  padding-right: 6px;
+  padding-bottom: 8px;
+  padding-left: 6px;
+}
+
+.dollar-box {
+  margin-right: 25px;
+}
+
+.dollar-sign {
+  color: #2959ce;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dollar-value {
+  text-decoration-line: none;
+  color: #555;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.ruble-sign {
+  color: #2959ce;
+  font-size: 16px;
+}
+
+.ruble-value {
+  margin-right: 240px;
+  font-weight: 400;
+  text-decoration-line: none;
+  color: #555;
+  font-size: 16px;
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-search {
+  width: 274px;
+  margin-right: 25px;
+  padding: 15px 41px 13px;
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  color: #8d8d8d;
+  border-radius: 60px;
+  background-color: #fff;
+  background-image: url(../images/searchicon.svg);
+  background-repeat: no-repeat;
+  background-position: left 15px center
+}
+
+.languages {
+  display: flex;
+  height: 36px;
+  padding: 3px;
+  margin-right: 25px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 39px;
+  background-color: #dce6ff;
+}
+
+.uz-language-link {
+  padding-top: 8px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  color: #000;
+  font-weight: 400;
+  text-decoration-line: none;
+  font-size: 13px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.ru-language-link {
+  padding-top: 11px;
+  padding-right: 13px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  color: #a6a6a6;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration-line: none;
+}
+
+.exit {
+  display: flex;
+  padding: 13px 20px;
+  border-radius: 10px;
+  background-color: #7296ec;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  text-decoration-line: none;
+}
+
+.cite-header-bottom {
+  border-bottom: solid 1px #d1d1d1;
+  
+}
+
+.header-bottom-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.header-bottom-list-item-link {
+  text-decoration-line: none;
+  color: #7f7f7f;
+  font-size: 18px;
+}
+
+.conference {
+  padding-bottom: 100px;
+}
+
+.conference-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.conference-text-wrapper {
+  width: 797px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+/* .conference-taken-site {
+  display: flex;
+  margin-bottom: 30px;
+  text-decoration-line: none;
+  align-items: center;
+}
+
+.conference-taken-site-img {
+  margin-right: 10px;
+} */
+
+.conference-taken-site-text {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  color: #5e5f61;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.fbm-ru::before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  background-image: url("../images/conferncefbm.png");
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.conference-taken-site-time {
+  color: #5e5f61;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.conference-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.conference-img {
+  margin-bottom: 25px;
+}
+
+.conference-text {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.tesla-text {
+  margin-bottom: 50px;
+}
+
+
+
+
+.main-news {
+  margin-bottom: 10px;
+  padding: 20px 17px 25px 17px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+}
+
+.main-news-tite {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+
+.main-news-list-item {
+  border-bottom: solid 1px #d2d2d2;
+  margin-bottom: 20px;
+}
+
+.helper-item {
+  border-bottom-width: 0px;
+  margin-bottom: 0;
+}
+
+.main-news-list-item-link {
+  text-decoration-line: none;
+}
+
+.main-news-list-item-title {
+  margin-top: 20;
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+}
+
+.main-news-list-item-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #5e5f61;
+}
+
+.helper-text {
+  margin-bottom: 0px;
+}
+
+.main-news-list-item-time {
+  font-size: 12px;
+  font-weight: 400;
+  color: #5e5f61;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.major-news-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.news-list-item {
+  padding: 20px 17px 15px 17px;
+  gap: 15px;
+  border-radius: 15px;
+  background-color: #f6f6f6; 
+}
+
+.news-list-item-wrapper {
+  width: 358px;
+}
+
+.news-list-item-box {
+  width: 354px;
+}
+.news-list-item-link {
+  text-decoration-line: none;
+}
+
+.news-list-item-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
+}
+
+.news-list-item-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #4a4b4c;
+}
+
+/* .taken-site {
+  display: flex;
+  align-items: center;
+  text-decoration-line: none;
+}
+
+.taken-site-img {
+  margin-right: 10px;
+} */
+
+.taken-site-text {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-items: center;
+  color: #5e5f61;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.taken-site-text::before {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  content: "";
+  background-repeat: no-repeat;
+}
+
+.diger-ru::before {
+  background-image: url("../images/diggerru.png");
+}
+
+.lenta-ru::before {
+  background-image: url("../images/lentaru.svg");
+}
+
+.tarantas-news::before {
+  background-image: url("../images/tarantasnyus.png");
+}
+
+.taken-site-time {
+  color: #5e5f61;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cite-footer {
+  background-color: #7297ef;
+}
+
+.footer-wrapper {
+  display: flex;
+  margin-right: 101px;
+  margin-bottom: 20px;
+  margin-left: 101px;
+  border-bottom: solid 1px #cecece;
+}
+
+.namanganliklar-emblem-link {
+  text-decoration-line: none;
+}
+
+.namanganliklar-emblem {
+  margin-top: 40px;
+  margin-right: 168px;
+  margin-bottom: 15px;
+}
+
+.footer-text-wrapper {
+  width: 229px;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px; 
+}
+
+.cite-footer-list {
+  margin-top: 83px;
+}
+
+.information-cite {
+  margin-right: 100px;
+}
+
+.cite-footer-list-item-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-decoration-line: none;
+  color: #fff;
+}
+
+.lastone-item-link {
+  margin-bottom: 30px;
+}
+
+.last-item-link {
+  margin-bottom: 0;
+}
+
+.social-networks-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+  padding-bottom: 40px;
+  margin-left: 101px;
+}
+
+.social-networks-text-wrapper {
+  width: 161px;
+  margin-right: 662px;
+}
+
+.social-networks-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 23px; 
+  color: #fff;
+}
+
+.social-networks-list {
+  display: flex;
+}
+
+.social-networks-link {
+  display: block;
+  margin-right: 25px;
+  text-decoration-line: none;
+}
+
+
+.youtube-img {
+  margin-right: 0;
+}
